@@ -3,10 +3,86 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=1200">
     <meta name="description" content="S&E Segurança Eletrônica - Proteção para sua família e empresa em Igarapava.">
-    <title>Início | S&E Segurança Eletrônica</title>
+    <title>Contato | S&E Segurança Eletrônica</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .info-contato a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .info-contato a:hover {
+            color: var(--azul-hover);
+            text-decoration: underline;
+        }
+
+        .info-contato {
+            background-color: #f4f4f4;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 5px solid var(--azul-marinho);
+            margin: 20px 0 40px 0;
+        }
+
+        .info-contato p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+            line-height: 1.5;
+        }
+
+        .info-contato p:last-child {
+            margin-bottom: 0;
+        }
+
+        .formulario-contato {
+            background-color: #f4f4f4;
+            padding: 30px;
+            border-radius: 8px;
+            border-top: 5px solid var(--azul-marinho);
+            margin-top: 20px;
+        }
+
+        .formulario-contato label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--azul-marinho);
+        }
+
+        .formulario-contato input,
+        .formulario-contato textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+
+        .btn-enviar {
+            background-color: var(--azul-marinho);
+            color: var(--branco);
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-enviar:hover {
+            background-color: var(--azul-hover);
+        }
+
+        h3 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,14 +90,14 @@
     <header>
         <h1>
             <a href="index.html">
-                <img src="imagens/LOGO.png" alt="Logotipo S&E Segurança Eletrônica - Igarapava/SP" class="logo">
+                <img src="imagens/LOGO.png" alt="Logotipo S&E" class="logo">
             </a>
         </h1>
     </header>
 
     <nav>
         <ul>
-            <li><a href="index.html">Pagina Inicial</a></li>
+            <li><a href="index.html">Página Inicial</a></li>
             <li><a href="quemsomos.html">Quem Somos</a></li>
             <li><a href="regiaoatuacao.html">Região de atuação</a></li>
             <li><a href="contato.html">Contato</a></li>
@@ -31,12 +107,19 @@
     <main>
         <section>
             <h2>Fale Conosco</h2>
-            <p>Estamos localizados no coração de Igarapava e prontos para atender você.</p>
+            <p>Confira nossos canais de atendimento e nossa localização abaixo:</p>
 
             <div class="info-contato">
-                <p><strong>Telefones:</strong> (16) 98861-5508 e (16) 99287-7201</p>
+                <p><strong>Telefones:</strong>
+                    <a href="https://wa.me/5516988615508" target="_blank">(16) 98861-5508</a> e
+                    <a href="https://wa.me/5516992877201" target="_blank">(16) 99287-7201</a>
+                </p>
+                <p><strong>E-mail:</strong>
+                    <a href="mailto:semateriais@hotmail.com">semateriais@hotmail.com</a>
+                </p>
                 <p><strong>Endereço:</strong> Avenida Coronel Quito, 147, Centro - Igarapava/SP</p>
             </div>
+
             <h3>Nossa Localização</h3>
             <div class="mapa-container">
                 <iframe
@@ -45,17 +128,34 @@
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
+
+            <h3>Envie uma Mensagem</h3>
+            <form action="#" method="post" class="formulario-contato">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="telefone">Telefone / WhatsApp:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit" class="btn-enviar">Enviar Agora</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <a href="https://www.uniube.br/" target="_blank"> <img src="imagens/logo_uniube.png" class="logo_uniube"></a>
-        <div class="footer-text"></div>
-
-
-        <p><strong>UNIUBE - UBERABA/MG</strong></p>
-        <p>Matheus Venancio da Silva - RA: 5167765</p>
-        <p class="copyright">&copy; 2026 S&E Segurança Eletrônica - Igarapava/SP</p>
+        <a href="https://www.uniube.br/" target="_blank">
+            <img src="imagens/logo_uniube.png" alt="Logo Uniube" class="logo_uniube">
+        </a>
+        <div class="footer-text">
+            <p><strong>UNIUBE - UBERABA/MG</strong></p>
+            <p>Matheus Venancio da Silva - RA: 5167765</p>
+            <p class="copyright">&copy; 2026 S&E Segurança Eletrônica - Igarapava/SP</p>
         </div>
     </footer>
 
